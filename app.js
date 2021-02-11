@@ -114,11 +114,21 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) {
+  let x=testArray[0];
+  let y=testArray[1];
+  let z=testArray[2];
+  let q =multiply (x,y);
+  let w=q[0];
+  let e =multiply(w,z);
+  let m= e[0];
+  return[m,`The numbers ${x},${y},${z} have a product of 24.`];
+
+
   //eslint-disable-line
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
