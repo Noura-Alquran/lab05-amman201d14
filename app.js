@@ -83,12 +83,22 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) {
+  let x=testArray[0];
+  let y=testArray[1];
+  let z=testArray[2];
+  let q =sum (x,y);
+  let w=q[0];
+  let e =sum(w,z);
+  let m= e[0];
+  return[m,`${x},${y},${z} was passed in as an array of numbers, and ${m} is their sum.`];
+
+
   //eslint-disable-line
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+ testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
